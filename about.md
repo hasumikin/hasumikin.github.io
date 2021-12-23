@@ -6,7 +6,7 @@ permalink: /about/
 
 hasumikin is a programmer.
 
-## Private works
+## Works
 
 - [PicoRuby](https://github.com/picoruby/picoruby)  
   An mruby compatible Ruby implementation for one-chip microcontrollers
