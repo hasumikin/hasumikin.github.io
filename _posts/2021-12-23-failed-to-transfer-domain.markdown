@@ -2,7 +2,7 @@
 layout: post
 title:  "ドメイン移管に失敗した"
 date:   2021-12-23 13:32:40 +0900
-categories: jekyll update
+categories:
 ---
 
 2007年くらいに取得して以来ずっと使っていなかったドメインを使おうと思い立ち、せっかくなのでムームードメインからAWS(Route53)へ移管しようとした。
