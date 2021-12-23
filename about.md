@@ -25,14 +25,14 @@ hasumikin is a programmer.
   [mruby/c: Running on Less Than 64KB RAM Microcontroller](https://youtu.be/1VFPSHs3WvI)
 - RubyKaigi 2019  
   [Practical mruby/c firmware development with CRuby](https://rubykaigi.org/2019/presentations/hasumikin.html#apr19)
-- RubyKaigm 2018  
+- RubyKaigi 2018  
   [Firmware programming with mruby/c](https://rubykaigi.org/2018/presentations/hasumon.html)
 
 ## Honors & Awards
 
 - A final nominee for the Ruby Prize 2021  
   [https://rubyprize.jp/](https://rubyprize.jp/)
-- The First Prize of the Fukuoka Ruby Award 2020  
+- The first prize winner of the Fukuoka Ruby Award 2020  
   [http://www.digitalfukuoka.jp/topics/144](http://www.digitalfukuoka.jp/topics/144)
 
 ## Grants
