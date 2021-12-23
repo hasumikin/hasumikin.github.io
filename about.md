@@ -44,6 +44,6 @@ hasumikin is a programmer.
 
 
 {:refdef: style="text-align: center;"}
-![]({{site.baseurl}}/images/picoruby.svg)
+![]({{site.baseurl}}/assets/images/picoruby.svg)
 {: refdef}
 
