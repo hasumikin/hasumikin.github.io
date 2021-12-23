@@ -16,13 +16,13 @@ hasumikin is a programmer.
 ## Presentations
 
 - RubyConf 2021  
-  On a Keyboard Ruby on Board: PicoRuby and PRK Firmware (link coming soon)
+  [On a Keyboard Ruby on Board: PicoRuby and PRK Firmware](https://youtu.be/SLSwn41iJX4)
 - RubyKaigi Takeout 2021  
   [PRK Firmware: Keyboard is Essentially Ruby](https://rubykaigi.org/2021-takeout/presentations/hasumikin.html)
 - RubyKaigi Takeout 2020  
   [mruby machine: An Operating System for Microcontoller](https://rubykaigi.org/2020-takeout/presentations/hasumikin.html#sep04)
 - RubyConf 2019  
-  [mruby/c: Running on Less Than 64KB RAM Microcontroller](https://rubyconf.org/2019/program#session-856)
+  [mruby/c: Running on Less Than 64KB RAM Microcontroller](https://youtu.be/1VFPSHs3WvI)
 - RubyKaigi 2019  
   [Practical mruby/c firmware development with CRuby](https://rubykaigi.org/2019/presentations/hasumikin.html#apr19)
 - RubyKaigm 2018  
