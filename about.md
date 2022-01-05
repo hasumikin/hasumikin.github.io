@@ -6,7 +6,19 @@ permalink: /about/
 
 hasumikin is a programmer.
 
-## Works
+As of 2022:
+
+## Summary
+
+- A cloud architect for web applications with 10+ years of career
+- Serving as a tech leader in almost all projects to decide technical stack, to define database schema and to write backend program
+
+## Core skills
+- Ruby on Rails (9 years)
+- AWS (12 years)
+- Technical leader (11 years)
+
+## Personal works
 
 - [PicoRuby](https://github.com/picoruby/picoruby)  
   An mruby compatible Ruby implementation for one-chip microcontrollers
@@ -41,6 +53,15 @@ hasumikin is a programmer.
   [picoruby-compiler: An alternative mruby-compiler](https://www.ruby.or.jp/en/news/20211025)
 - 2020 Ruby Association Grant  
   [mini mruby compiler (mmrbc)](https://www.ruby.or.jp/en/news/20201022)
+
+## Education
+
+- Chiba University, Chiba, Japan  
+  Master of Engineering in Design and Architectural Science  
+  Completed in 2000 / GPA 4.00
+- Chiba University, Chiba, Japan  
+  Bachelor of Engineering in Architecture  
+  Graduated in 1998 / GPA 3.78
 
 
 {:refdef: style="text-align: center;"}
