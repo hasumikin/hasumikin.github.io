@@ -18,6 +18,22 @@ As of 2022:
 - AWS (12 years)
 - Technical leader (11 years)
 
+## Capabilities
+- Programming related
+  - Ruby
+  - C
+  - RDBMS schema design
+  - NoSQL
+  - Git
+  - Linux and Docker
+- Cloud related
+  - Serverless framework
+  - Terraform
+  - CI/CD
+- IoT related
+  - Circuit design / KiCad, PSoC Creator
+  - 3D modeling / Rhinoceros
+
 ## Personal works
 
 - [PicoRuby](https://github.com/picoruby/picoruby){:target="_blank"}  
