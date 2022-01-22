@@ -64,6 +64,7 @@ Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabb
 
 ## Honors & Awards
 
+- The first prize winner of the Fukuoka Ruby Award 2022  
 - A final nominee for the Ruby Prize 2021  
   [https://rubyprize.jp/](https://rubyprize.jp/){:target="_blank"}
 - The first prize winner of the Fukuoka Ruby Award 2020  
