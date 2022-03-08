@@ -41,6 +41,10 @@ As of 2022:
 - [PRK Firmware](https://github.com/picoruby/prk_firmware){:target="_blank"}  
   A keyboard firmware framework written in PicoRuby
 
+{:refdef: style="text-align: center;"}
+![]({{site.baseurl}}/assets/images/picoruby.svg)
+{: refdef}
+
 ## Presentations
 
 - RubyConf 2021 / Denver, the US and online  
@@ -61,6 +65,7 @@ As of 2022:
 
 Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabbit-shocker.org/authors/hasumikin/){:target="_blank"}
 
+<iframe width="700" height="400" src="https://www.youtube.com/embed/SLSwn41iJX4" frameborder="0" allowfullscreen> </iframe>
 
 ## Honors & Awards
 
@@ -70,6 +75,14 @@ Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabb
   [https://rubyprize.jp/](https://rubyprize.jp/){:target="_blank"}
 - The first prize winner of the Fukuoka Ruby Award 2020  
   [http://www.digitalfukuoka.jp/topics/144](http://www.digitalfukuoka.jp/topics/144){:target="_blank"}
+
+{:refdef: style="text-align: center;"}
+![]({{site.baseurl}}/assets/images/fukuokarubyaward.png)
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![]({{site.baseurl}}/assets/images/finalnominees-awa-2021.png)
+{: refdef}
 
 ## Grants
 
@@ -87,8 +100,9 @@ Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabb
   Bachelor of Engineering in Architecture  
   Graduated in 1998 / GPA 3.78
 
-
 {:refdef: style="text-align: center;"}
-![]({{site.baseurl}}/assets/images/picoruby.svg)
+![]({{site.baseurl}}/assets/images/wes-digital_badge-icon.png)
 {: refdef}
-
+{:refdef: style="text-align: center;"}
+[Evidence](https://badges.wes.org/Evidence?i=4e38d9b3-12aa-4eb1-b16b-efb29b89e738&type=us){:target="_blank"}
+{: refdef}
