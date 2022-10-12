@@ -72,7 +72,7 @@ Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabb
 - The first prize winner of the Fukuoka Ruby Award 2022  
   [http://www.digitalfukuoka.jp/topics/187](http://www.digitalfukuoka.jp/topics/187){:target="_blank"}
 - A final nominee for the Ruby Prize 2021  
-  [https://rubyprize.jp/](https://rubyprize.jp/){:target="_blank"}
+  [https://rubyprize.jp/21_rubyprize/21_iv-nominees02-ja.html](https://rubyprize.jp/21_rubyprize/21_iv-nominees02-ja.html){:target="_blank"}
 - The first prize winner of the Fukuoka Ruby Award 2020  
   [http://www.digitalfukuoka.jp/topics/144](http://www.digitalfukuoka.jp/topics/144){:target="_blank"}
 
