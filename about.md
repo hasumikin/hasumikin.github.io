@@ -6,7 +6,7 @@ permalink: /about/
 
 hasumikin is a programmer.
 
-As of 2022:
+As of 2023:
 
 ## Summary
 
@@ -14,9 +14,9 @@ As of 2022:
 - Serving as a tech leader in almost all projects to decide technical stack, to define database schema and to write backend program
 
 ## Core skills
-- Ruby on Rails (9 years)
-- AWS (12 years)
-- Technical leader (11 years)
+- Ruby on Rails (10 years)
+- AWS (13 years)
+- Technical leader (12 years)
 
 ## Capabilities
 - Programming related
@@ -36,32 +36,41 @@ As of 2022:
 
 ## Personal works
 
+### As the creator:
 - [PicoRuby](https://github.com/picoruby/picoruby){:target="_blank"}  
   An mruby compatible Ruby implementation for one-chip microcontrollers
 - [PRK Firmware](https://github.com/picoruby/prk_firmware){:target="_blank"}  
   A keyboard firmware framework written in PicoRuby
 
-{:refdef: style="text-align: center;"}
-![]({{site.baseurl}}/assets/images/picoruby.svg)
-{: refdef}
+    {:refdef: style="text-align: center;"}
+    ![]({{site.baseurl}}/assets/images/picoruby.svg)
+    {: refdef}
+
+### As a maintainer:
+- [ruby/irb](https://github.com/ruby/irb){:target="_blank"}
+- [ruby/reline](https://github.com/ruby/reline){:target="_blank"}
+- [mrubyc/mrubyc](https://github.com/mrubyc/mrubyc){:target="_blank"}
 
 ## Presentations
 
+- RubyWorld Conference 2022 / Matsue, Japan  
+  [[en] PicoRuby episode Ⅲ](https://youtu.be/RKTlujhY6J8){:target="_blank"}  
+  [[ja] PicoRuby episode Ⅲ](https://youtu.be/6Fs-zZuCuv0){:target="_blank"}
 - RubyConf 2021 / Denver, the US and online  
-  [On a Keyboard Ruby on Board: PicoRuby and PRK Firmware](https://youtu.be/SLSwn41iJX4){:target="_blank"}
+  [[en] On a Keyboard Ruby on Board: PicoRuby and PRK Firmware](https://youtu.be/SLSwn41iJX4){:target="_blank"}
 - RubyKaigi Takeout 2021 / Online  
-  [PRK Firmware: Keyboard is Essentially Ruby](https://rubykaigi.org/2021-takeout/presentations/hasumikin.html){:target="_blank"}
+  [[ja] PRK Firmware: Keyboard is Essentially Ruby](https://rubykaigi.org/2021-takeout/presentations/hasumikin.html){:target="_blank"}
 - RubyKaigi Takeout 2020 / Online  
-  [mruby machine: An Operating System for Microcontoller](https://rubykaigi.org/2020-takeout/presentations/hasumikin.html#sep04){:target="_blank"}
+  [[ja] mruby machine: An Operating System for Microcontoller](https://rubykaigi.org/2020-takeout/presentations/hasumikin.html#sep04){:target="_blank"}
 - RubyConf 2019 / Nashville, the US  
-  [mruby/c: Running on Less Than 64KB RAM Microcontroller](https://youtu.be/1VFPSHs3WvI){:target="_blank"}
+  [[en] mruby/c: Running on Less Than 64KB RAM Microcontroller](https://youtu.be/1VFPSHs3WvI){:target="_blank"}
 - [KRKRB 2019 / Cracow, Poland](https://krk-rb.pl/){:target="_blank"}
 - RubyKaigi 2019 / Fukuoka, Japan  
-  [Practical mruby/c firmware development with CRuby](https://rubykaigi.org/2019/presentations/hasumikin.html#apr19){:target="_blank"}
+  [[en] Practical mruby/c firmware development with CRuby](https://rubykaigi.org/2019/presentations/hasumikin.html#apr19){:target="_blank"}
 - RubyWorld Conference 2018 / Matsue, Japan  
-  [Making IoT device with Ruby](https://www.youtube.com/watch?v=3ICCdASI8tg){:target="_blank"}
+  [[ja] Making IoT device with Ruby](https://www.youtube.com/watch?v=3ICCdASI8tg){:target="_blank"}
 - RubyKaigi 2018 / Sendai, Japan  
-  [Firmware programming with mruby/c](https://rubykaigi.org/2018/presentations/hasumon.html){:target="_blank"}
+  [[ja] Firmware programming with mruby/c](https://rubykaigi.org/2018/presentations/hasumon.html){:target="_blank"}
 
 Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabbit-shocker.org/authors/hasumikin/){:target="_blank"}
 
