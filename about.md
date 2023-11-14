@@ -50,9 +50,16 @@ As of 2023:
 - [ruby/irb](https://github.com/ruby/irb){:target="_blank"}
 - [ruby/reline](https://github.com/ruby/reline){:target="_blank"}
 - [mrubyc/mrubyc](https://github.com/mrubyc/mrubyc){:target="_blank"}
+- [rabbit-shocker/rabbit](https://github.com/rabbit-shocker/rabbit){:target="_blank"}
 
 ## Presentations
 
+- RubyConfTH 2023 / Bangkok, Thailand  
+  [[en] A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://www.youtube.com/watch?v=GkIRr1Xm8GU){:target="_blank"}
+- Euruko 2023 / Vilnius, Lituhania  
+  [[en] A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://youtu.be/WiJC_v5Lus8){:target="_blank"}
+- RubyKaigi 2023 / Matsumoto, Japan  
+  [[ja] Build Your Own SQLite3](https://rubykaigi.org/2023/presentations/hasumikin.html#day3){:target="_blank"}
 - RubyWorld Conference 2022 / Matsue, Japan  
   [[en] PicoRuby episode Ⅲ](https://youtu.be/RKTlujhY6J8){:target="_blank"}  
   [[ja] PicoRuby episode Ⅲ](https://youtu.be/6Fs-zZuCuv0){:target="_blank"}
@@ -74,7 +81,7 @@ As of 2023:
 
 Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabbit-shocker.org/authors/hasumikin/){:target="_blank"}
 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/SLSwn41iJX4" frameborder="0" allowfullscreen> </iframe>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/WiJC_v5Lus8?si=o7j6EaSl3Occnu-2" frameborder="0" allowfullscreen> </iframe>
 
 ## Honors & Awards
 
