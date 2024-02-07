@@ -6,7 +6,7 @@ permalink: /about/
 
 hasumikin is a programmer.
 
-As of 2023:
+As of 2024:
 
 ## Summary
 
@@ -14,11 +14,13 @@ As of 2023:
 - Serving as a tech leader in almost all projects to decide technical stack, to define database schema and to write backend program
 
 ## Core skills
-- Ruby on Rails (10 years)
-- AWS (13 years)
-- Technical leader (12 years)
+
+- Ruby on Rails (11 years)
+- AWS (14 years)
+- Technical leader (13 years)
 
 ## Capabilities
+
 - Programming related
   - Ruby
   - C
@@ -37,6 +39,7 @@ As of 2023:
 ## Personal works
 
 ### As the creator:
+
 - [PicoRuby](https://github.com/picoruby/picoruby){:target="_blank"}  
   An mruby compatible Ruby implementation for one-chip microcontrollers
 - [PRK Firmware](https://github.com/picoruby/prk_firmware){:target="_blank"}  
@@ -47,10 +50,16 @@ As of 2023:
     {: refdef}
 
 ### As a maintainer:
+
 - [ruby/irb](https://github.com/ruby/irb){:target="_blank"}
 - [ruby/reline](https://github.com/ruby/reline){:target="_blank"}
 - [mrubyc/mrubyc](https://github.com/mrubyc/mrubyc){:target="_blank"}
 - [rabbit-shocker/rabbit](https://github.com/rabbit-shocker/rabbit){:target="_blank"}
+
+## Publications
+
+- [n月刊ラムダノート Vol.4, No.1(2024)  
+  [ja] PicoRubyといっしょに学ぶ、プログラミング言語が電気回路を動かす仕組み](https://www.lambdanote.com/collections/frontpage/products/nmonthly-vol-4-no-1-2024){:target="_blank"}
 
 ## Presentations
 
