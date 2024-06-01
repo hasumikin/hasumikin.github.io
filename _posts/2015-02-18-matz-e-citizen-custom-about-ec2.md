@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "島根県人がEC2を起動したら最初にやること【Amazon Linux編】"
 date: 2015-02-18 09:41:28.442935
 categories: 

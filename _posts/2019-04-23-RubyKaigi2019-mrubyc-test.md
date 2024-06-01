@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi2019で発表した内容について〈mrubyc-test編〉"
 date: 2019-04-23 13:08:24.426298
 categories: 

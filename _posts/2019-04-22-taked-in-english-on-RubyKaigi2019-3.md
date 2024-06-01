@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi2019にて生まれて初めて英語プレゼンをしてきた(3/3)"
 date: 2019-04-22 17:20:41.243817
 categories: 

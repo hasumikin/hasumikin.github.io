@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "CircleCIで継続的インテグレーション【導入編】"
 date: 2015-01-23 11:39:03.992792
 categories: 

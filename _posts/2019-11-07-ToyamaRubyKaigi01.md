@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "富山Ruby会議01に登壇してきました"
 date: 2019-11-07 13:32:00.425941
 categories: 

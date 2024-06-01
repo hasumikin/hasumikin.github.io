@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "mruby/cを普通のパソコンで動かす"
 date: 2018-06-25 17:57:04.045351
 categories: 

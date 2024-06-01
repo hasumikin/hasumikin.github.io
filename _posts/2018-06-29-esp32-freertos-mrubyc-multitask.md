@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "ESP32+FreeRTOS+mruby/cでマルチタスク"
 date: 2018-06-29 11:06:08.703622
 categories: 

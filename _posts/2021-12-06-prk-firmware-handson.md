@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[PRK Firmware Advent Calendar 2021] eswaiさんのPicoRubyマクロパッド製作ハンズオン開催報告"
 date: 2021-12-06 10:01:00.132903
 categories: 

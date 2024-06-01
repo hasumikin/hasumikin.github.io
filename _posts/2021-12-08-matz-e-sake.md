@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[地方在住 Advent Calendar 2021] 松江について"
 date: 2021-12-07 14:11:02.158825
 categories: 

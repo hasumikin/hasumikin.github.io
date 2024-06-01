@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Rubyラベル十旭日！"
 date: 2019-11-08 14:28:58.936926
 categories: 

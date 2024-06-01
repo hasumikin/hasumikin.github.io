@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "irb.wasmの入力メソッドをSTDIOからRelineへ改修しました"
 date: 2022-12-07 17:52:00.984548
 categories: 

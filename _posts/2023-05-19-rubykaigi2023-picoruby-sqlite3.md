@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi 2023参加レポート【たのしいマイコンRuby編】"
 date: 2023-05-18 19:17:36.705459
 categories: 

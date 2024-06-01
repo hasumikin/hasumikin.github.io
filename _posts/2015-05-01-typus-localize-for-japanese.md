@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "管理アプリgem typusの日本語化【Rails4.2対応】"
 date: 2015-05-01 15:01:39.203804
 categories: 

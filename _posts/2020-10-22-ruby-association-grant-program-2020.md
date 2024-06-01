@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "なんちゃってフルタイムコミッター？"
 date: 2020-10-22 22:33:51.490753
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi2019に参加してきました"
 date: 2019-04-22 19:37:36.290049
 categories: 

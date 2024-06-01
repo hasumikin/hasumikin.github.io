@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "LFとCRLFが選択できるようになった"
 date: 2020-06-04 14:31:14.239988
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RequireJS環境のBackbone.Modelインスタンスを複数のViewから共有する"
 date: 2015-01-30 13:46:25.707406
 categories: 

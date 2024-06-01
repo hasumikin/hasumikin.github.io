@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi Takeout 2020で発表した「mmruby」について"
 date: 2020-09-06 10:22:20.365099
 categories: 

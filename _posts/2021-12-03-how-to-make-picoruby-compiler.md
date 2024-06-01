@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[Ruby Advent Calendar 2021] PicoRubyあるいはRuby言語のコンパイラについて"
 date: 2021-12-01 12:01:42.932792
 categories: 

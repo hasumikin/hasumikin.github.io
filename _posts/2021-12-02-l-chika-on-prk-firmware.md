@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[PRK Firmware Advent Calendar 2021] RubyだけでLチカできちゃうんです。そう、PRK Firmwareならね（←"
 date: 2021-11-29 13:11:14.254339
 categories: 

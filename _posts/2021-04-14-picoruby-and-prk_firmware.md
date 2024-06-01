@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Rubyでキーボードファームウェアを書く！"
 date: 2021-04-14 13:57:37.566527
 categories: 

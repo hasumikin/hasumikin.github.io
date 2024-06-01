@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "mmruby日記"
 date: 2021-01-29 14:44:14.531387
 categories: 

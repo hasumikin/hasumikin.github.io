@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "mruby/c よもやま話"
 date: 2018-08-22 18:36:10.125380
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi Takeout 2021に登壇します"
 date: 2021-08-31 08:53:31.594658
 categories: 

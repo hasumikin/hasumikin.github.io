@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "ImageMagickのインストール時に注意すること【CentOS7編】"
 date: 2014-12-18 15:05:59.364260
 categories: 

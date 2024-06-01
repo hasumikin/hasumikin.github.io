@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "mruby/c（POSIX）で正確な時間計測"
 date: 2019-01-05 23:18:07.292458
 categories: 

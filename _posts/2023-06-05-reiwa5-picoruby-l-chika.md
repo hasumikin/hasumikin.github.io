@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "【令和5年最新版】PicoRubyとラズパイピコでLチカする方法（Lチカだけじゃないよ）"
 date: 2023-06-04 22:19:39.920829
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "ポーランドとプログラマと英語(2/2)"
 date: 2019-05-21 14:58:53.174671
 categories: 

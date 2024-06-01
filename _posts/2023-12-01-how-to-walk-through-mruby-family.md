@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "mrubyファミリーの歩き方（を装ったビルドシステムの話）"
 date: 2023-11-28 11:50:58.726738
 categories: 

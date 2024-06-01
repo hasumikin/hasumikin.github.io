@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "ポーランドでマイコン組み込みRubyについて発表してきます"
 date: 2019-04-25 16:24:53.139769
 categories: 

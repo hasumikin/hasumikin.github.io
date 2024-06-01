@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "3分で動かす ESP32 + mruby/c （もちろんマルチタスク）"
 date: 2018-07-27 09:43:48.637486
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "『n月刊ラムダノート』に寄稿しました"
 date: 2024-02-07 09:19:52.351586
 categories: 

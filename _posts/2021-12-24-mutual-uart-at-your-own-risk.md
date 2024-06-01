@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[PRK Firmware Advent Calendar 2021] mutual_uart_at_my_own_riskとは何なのか"
 date: 2021-12-15 23:03:29.714970
 categories: 

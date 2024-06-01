@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyWorld Conference 2018 に登壇しました"
 date: 2018-12-20 13:53:49.897480
 categories: 

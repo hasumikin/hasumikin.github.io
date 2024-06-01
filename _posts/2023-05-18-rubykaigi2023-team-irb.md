@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi 2023参加レポート【IRBは人間がつくっているんだよ編】"
 date: 2023-05-18 14:40:03.208684
 categories: 

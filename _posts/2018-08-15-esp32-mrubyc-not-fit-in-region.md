@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "ESP32 + mruby/c 欲張りすぎてメモリ不足 の巻"
 date: 2018-08-15 18:38:46.336660
 categories: 

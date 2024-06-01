@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "フクオカRuby大賞をとりました"
 date: 2022-01-24 10:07:37.185404
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Reline::Faceで快適ターミナル生活"
 date: 2023-11-28 14:32:42.370512
 categories: 

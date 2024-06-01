@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Rabbitチートシート"
 date: 2021-06-16 10:43:16.066943
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[Rubyist近況[1] Advent Calendar 2021] カニと牡蠣とコーヒー"
 date: 2021-12-21 09:11:43.089128
 categories: 

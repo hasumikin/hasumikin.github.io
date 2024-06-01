@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[PRK Firmware Advent Calendar 2021] ロータリエンコーダ完全に理解した（後編）"
 date: 2021-12-13 10:35:47.342899
 categories: 

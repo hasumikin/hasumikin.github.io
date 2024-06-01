@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "HAL選択方法をちょっと改善した"
 date: 2020-06-04 13:53:35.116357
 categories: 

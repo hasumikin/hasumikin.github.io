@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyKaigi Takeout 2020 に一般参加しても出勤扱いです！"
 date: 2020-08-21 18:54:09.019553
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "[PRK Firmware Advent Calendar 2021] 光るCorneliusとPRK Firmware"
 date: 2021-12-23 11:22:32.391180
 categories: 

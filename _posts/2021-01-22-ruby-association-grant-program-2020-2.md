@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RA Grant の中間報告を提出しました"
 date: 2021-01-22 11:26:54.818333
 categories: 

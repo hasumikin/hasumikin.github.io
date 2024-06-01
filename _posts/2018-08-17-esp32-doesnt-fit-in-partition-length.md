@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "ESP32 こんどはROM（パーティション）不足"
 date: 2018-08-17 14:22:39.491536
 categories: 

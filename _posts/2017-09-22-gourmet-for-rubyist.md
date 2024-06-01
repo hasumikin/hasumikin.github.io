@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Rubyistたちのための松江グルメ案内〈RubyWorld Conference 2017 編〉"
 date: 2017-09-22 16:26:32.426924
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "mrubyc-utilsのチュートリアルを書きました"
 date: 2018-06-15 10:04:34.438804
 categories: 

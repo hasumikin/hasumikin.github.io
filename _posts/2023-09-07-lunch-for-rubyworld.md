@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyWorld Conferenceグルメガイド【令和五年ランチ編】"
 date: 2023-09-07 08:53:47.818651
 categories: 

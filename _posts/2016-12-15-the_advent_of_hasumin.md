@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "松江トランキーロ2016の記録"
 date: 2016-12-14 12:50:33.970343
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "【日記】ポーランドのRubyカンファレンスに参加してきた"
 date: 2019-05-20 19:19:52.078998
 categories: 

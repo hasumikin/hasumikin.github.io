@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RBSとSteepとPicoRubyのちょっといい話"
 date: 2021-05-24 08:54:58.434666
 categories: 

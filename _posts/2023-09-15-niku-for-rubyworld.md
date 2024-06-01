@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "RubyWorld上級者向けグルメガイド【熱燗を飲んで肉を食え編】"
 date: 2023-09-14 15:11:10.157069
 categories: 

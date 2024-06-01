@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "mruby/cのタイムスライスについて"
 date: 2020-06-02 13:54:59.576822
 categories: 
