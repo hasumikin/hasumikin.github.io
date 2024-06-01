@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "RubyKaigi 2024 について"
 date:   2024-05-25 00:00:00
 categories:

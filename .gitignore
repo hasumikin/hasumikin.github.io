@@ -7,3 +7,7 @@ _site/
 vendor/
 
 .tweet-cache/
+
+shimamon/images/
+shimamon/images/shimamon.production.sqlite3
+!shimamon/images/.gitkeep
