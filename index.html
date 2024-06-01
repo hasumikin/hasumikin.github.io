@@ -10,26 +10,26 @@ paginate: true
   {% endfor %}
 </div>
 
-<hr />
-
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
-  {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="active">{{ page }}</span>
-    {% else %}
-      {% if page == 1 %}
-        <a href="{{ site.baseurl }}/">{{ page }}</a>
+  {% assign current_page = paginator.page %}
+  {% assign total_pages = paginator.total_pages %}
+  {% assign show_pages = 3 %}
+  {% assign min_page = current_page | minus: show_pages %}
+  {% assign max_page = current_page | plus: show_pages %}
+
+  {% for page in (1..total_pages) %}
+    {% if page >= min_page and page <= max_page %}
+      {% if page == current_page %}
+        <span class="active">{{ page }}</span>
       {% else %}
-        <a href="{{ site.baseurl }}/page{{ page }}/">{{ page }}</a>
+        {% if page == 1 %}
+          <a href="{{ site.baseurl }}/">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/page{{ page }}/">{{ page }}</a>
+        {% endif %}
       {% endif %}
     {% endif %}
   {% endfor %}
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
-  {% endif %}
 </div>

@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-hasumikin is a programmer.
-
 As of 2024:
 
 ## Summary
