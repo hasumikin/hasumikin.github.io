@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
-
-hasumikin is a programmer.
 
 As of 2024:
 

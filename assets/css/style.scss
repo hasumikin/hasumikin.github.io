@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Google FontsからNoto Sans Japaneseをインポート */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+code, pre {
+    font-family: 'Source Code Pro', monospace;
+}
+
+p {
+  text-align: justify;
+}

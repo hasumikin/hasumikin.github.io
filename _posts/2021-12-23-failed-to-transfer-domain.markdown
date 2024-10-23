@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "ドメイン移管に失敗した"
 date:   2021-12-23 13:32:40 +0900
 categories:
