@@ -35,6 +35,14 @@
 	  {% endif %}
 	{% endif %}
         </section>
+        {% unless page.url == '/' %}  <!-- トップページ以外の場合のみ表示 -->
+        <section id="date">
+          <div class="post-meta">
+          <p class="post-date">{{ page.date | date: '%Y年%-m月%-d日' }}</p>
+          <a href="/" class="home-link">HOME</a>
+          </div>
+        </section>
+        {% endunless %}
         <hr>
         <section id="main_content">
           {{ content }}

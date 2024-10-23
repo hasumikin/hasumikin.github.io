@@ -17,3 +17,23 @@ code, pre {
 p {
   text-align: justify;
 }
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-date {
+  margin: 0;
+}
+
+.home-link {
+  text-decoration: none;
+  color: #333;  /* お好みの色に変更可能 */
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
