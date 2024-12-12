@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-As of 2024:
+As of 2025:
 
 ## Summary
 
@@ -36,7 +36,7 @@ As of 2024:
 
 ## Personal works
 
-### As the creator:
+### As the creator
 
 - [PicoRuby](https://github.com/picoruby/picoruby){:target="_blank"}  
   An mruby compatible Ruby implementation for one-chip microcontrollers
@@ -47,7 +47,7 @@ As of 2024:
     ![]({{site.baseurl}}/assets/images/picoruby.svg)
     {: refdef}
 
-### As a maintainer:
+### As a maintainer
 
 - [ruby/irb](https://github.com/ruby/irb){:target="_blank"}
 - [ruby/reline](https://github.com/ruby/reline){:target="_blank"}
@@ -59,11 +59,19 @@ As of 2024:
 - [n月刊ラムダノート Vol.4, No.1(2024)  
   [ja] PicoRubyといっしょに学ぶ、プログラミング言語が電気回路を動かす仕組み](https://www.lambdanote.com/collections/frontpage/products/nmonthly-vol-4-no-1-2024){:target="_blank"}
 
-## Presentations
+## Presentations | Workshops
 
+- EuRuKo 2024 / Sarajevo, Bosnia and Herzegovina  
+  [[en] Embedded Ruby Revolution: A Hands-On Workshop with PicoRuby](https://slide.rabbit-shocker.org/authors/hasumikin/Euruko2024/){:target="_blank"}
+- Osaka RubyKaigi 04 / Osaka, Japan  
+  [[ja] Where Is PicoRuby Going](https://regional.rubykaigi.org/osaka04/presentations/hasumikin){:target="_blank"}
+- RubyConf Arfica 2024 / Nairobi, Kenya  
+  [[en] A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://slide.rabbit-shocker.org/authors/hasumikin/RubyConfAfrica2024/){:target="_blank"}
+- RubyKaigi 2024 / Okinawa, Japan  
+  [[ja] Unlock The Universal Parsers: A New PicoRuby Compiler](https://rubykaigi.org/2024/presentations/hasumikin.html#day2){:target="_blank"}
 - RubyConfTH 2023 / Bangkok, Thailand  
   [[en] A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://www.youtube.com/watch?v=GkIRr1Xm8GU){:target="_blank"}
-- Euruko 2023 / Vilnius, Lituhania  
+- EuRuKo 2023 / Vilnius, Lituhania  
   [[en] A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://youtu.be/WiJC_v5Lus8){:target="_blank"}
 - RubyKaigi 2023 / Matsumoto, Japan  
   [[ja] Build Your Own SQLite3](https://rubykaigi.org/2023/presentations/hasumikin.html#day3){:target="_blank"}

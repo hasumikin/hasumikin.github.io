@@ -10,12 +10,41 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+code {
+    padding: 0.3em;
+}
+
 code, pre {
     font-family: 'Source Code Pro', monospace;
 }
 
 p {
   text-align: justify;
+}
+
+h3 {
+  color: #000;
+}
+
+ol li {
+    list-style-position: inside;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ol li p {
+    margin: 0;
+    display: inline;
+}
+
+ul li {
+    list-style-position: inside;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+footer {
+  margin-bottom: 50px;
 }
 
 .post-meta {
