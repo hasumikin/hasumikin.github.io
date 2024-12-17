@@ -109,6 +109,7 @@ def top_level_method
   "You cannot see this"
 end
 
+# `class MyClass < Object; end` ←これと同じ
 class MyClass
 end
 
