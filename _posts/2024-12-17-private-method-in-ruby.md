@@ -88,6 +88,17 @@ privateなメソッドは関数形式でしか呼べないので、レシーバ�
 [].send(:puts, "Hello") #=> Hello
 ```
 
+後述する`Module#public`の用法により、これもいけます：
+
+```ruby
+# CRuby
+class Array
+  public :puts
+end
+
+[].puts "Hello" #=> Hello
+```
+
 ## トップレベルに定義したメソッドの可視性
 
 そしてこれは、意外と知られていないかもしれない、あるいは広く一般には意識されていないであろうCRubyの言語仕様です：
