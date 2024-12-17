@@ -21,6 +21,7 @@ mrubyはCRubyとほぼ同じ言語機能を実装していますが、メソッ�
 `private`より後ろに定義したメソッドは、クラスの外から呼べません：
 
 ```ruby
+# CRuby
 class MyClass
   private
 
@@ -36,6 +37,7 @@ MyClass.new.private_method
 自クラスの中からなら呼べます：
 
 ```ruby
+# CRuby
 class MyClass
   def call_private_method
     private_method
@@ -182,6 +184,7 @@ MyClass.new.top_level_method
 以下のように書くとき、`private`メソッドは引数`:private_method`を受け取ります：
 
 ```ruby
+# CRuby
 private def private_method
   "private_method"
 end
@@ -199,6 +202,7 @@ end
 しかし、以下のように書くと、動作が異なります：
 
 ```ruby
+# CRuby
 private
 
 def private_method
