@@ -47,6 +47,20 @@ footer {
   margin-bottom: 50px;
 }
 
+.footnotes {
+  font-size: 0.9em;
+  ol li {
+    margin: 0.5em 0;
+  }
+}
+.footnote {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+.footnote::before {
+  content: "*";
+}
+
 .post-meta {
   display: flex;
   justify-content: space-between;
