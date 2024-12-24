@@ -5,7 +5,8 @@ date:   2024-12-25 08:00:00
 categories:
 ---
 
-この記事は、[mrubyファミリ Advent Calendar 2024](https://qiita.com/advent-calendar/2024/mruby-family)の25日目の記事です。やったぜ最終日！
+この記事は、[mrubyファミリ Advent Calendar 2024](https://qiita.com/advent-calendar/2024/mruby-family)の25日目の記事であると同時に、[WebAssembly / Wasm Advent Calendar 2024](https://qiita.com/advent-calendar/2024/wasm)シリーズ2の25日目の記事です。
+やったぜ最終日！
 
 ----
 
