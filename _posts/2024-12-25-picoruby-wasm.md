@@ -175,7 +175,7 @@ CRuby1.9以降のThreadクラスはOSのネイティブスレッド（Linuxな�
       end
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@picoruby/wasm-wasi@0.9.3/dist/init.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@picoruby/wasm-wasi@0.9.5/dist/init.iife.js"></script>
   </body>
 </html>
 ```
