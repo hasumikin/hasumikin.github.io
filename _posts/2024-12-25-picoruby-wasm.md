@@ -30,11 +30,12 @@ CRubyのWASM（ruby.wasm）はバイナリサイズが大きくて、ネット�
     <h2 id="container"></h2>
     <script type="text/ruby">
       require 'js'
-      JS.global[:document].getElementById('button').addEventListener('click') do |_e|
-        JS.global[:document].getElementById('container').innerText = 'Hello, PicoRuby!'
+      JS.document.getElementById('button').addEventListener('click') do |event|
+        event.preventDefault
+        JS.document.getElementById('container').innerText = 'Hello, PicoRuby!'
       end
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@picoruby/wasm-wasi@0.9.5/dist/init.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@picoruby/wasm-wasi@0.9.6/dist/init.iife.js"></script>
   </body>
 </html>
 ```
@@ -47,14 +48,16 @@ Rubyスクリプトをリモートから読み込むこともできます：
 
 ### ※制限事項
 
-現状では、`JS::Object#addEventListener` のブロックの中からブロックの外にある変数を参照できません：
+現状では、`JS::Object#addEventListener` のブロックの中からブロックの外にあるローカル変数やインスタンス変数を参照できません：
 
 ```ruby
 require 'js'
-document = JS.global[:document]
-document.getElementById('button').addEventListener('click') do |e|
-  document.getElementById('container').innerText = 'Hello, PicoRuby!'
-  #=> documentにアクセスできずNameErrorになる。なんとかしたいとは思うが....
+button = JS.document.getElementById('button')
+button.addEventListener('click') do |event|
+  event.preventDefault
+  button.innerText = 'Clicked!'
+  #=> buttonにアクセスできずNameErrorになる。なんとかしたいとは思うが....
+  event.target.innerText = 'Clicked!' #=> これはOK
 end
 ```
 
@@ -88,7 +91,7 @@ async/awaitを利用するためにはEmscriptenのビルドオプションに `
 require 'js'
 # `then`は書かない。PromiseをRuby側に露出させない（いまのところ）
 JS.global.fetch('example.jpg') do |response|
-  if response[:status].to_poro == 200
+  if response.status.to_poro == 200
     response.to_binary #=> String（バイナリデータ）
   end
 end
