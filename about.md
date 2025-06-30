@@ -11,7 +11,7 @@ As of 2025:
 - A cloud architect for web applications with 10+ years of career
 - Serving as a tech leader in almost all projects to decide technical stack, to define database schema and to write backend program
 
-## Core skills
+## Core Skills
 
 - Ruby on Rails (11 years)
 - AWS (14 years)
@@ -31,27 +31,30 @@ As of 2025:
   - Terraform
   - CI/CD
 - IoT related
-  - Circuit design / KiCad, PSoC Creator
+  - Circuit design / KiCad
   - 3D modeling / Rhinoceros
 
-## Personal works
+## Personal Works
 
-### As the creator
+### As the Creator
 
 - [PicoRuby](https://github.com/picoruby/picoruby){:target="_blank"}  
   An mruby compatible Ruby implementation for one-chip microcontrollers
+- [R2P2](https://github.com/picoruby/R2P2){:target="_blank"}  
+  PicoRuby-based shell system for Raspberry Pi Pico (2) (W)
 - [PRK Firmware](https://github.com/picoruby/prk_firmware){:target="_blank"}  
   A keyboard firmware framework written in PicoRuby
 
-    {:refdef: style="text-align: center;"}
-    ![]({{site.baseurl}}/assets/images/picoruby.svg)
-    {: refdef}
+{:refdef: style="text-align: center;"}
+![]({{site.baseurl}}/assets/images/picoruby.svg)
+{: refdef}
 
-### As a maintainer
+### As a Committer
 
+- [mruby/mruby](https://github.com/mruby/mruby){:target="_blank"}
+- [mrubyc/mrubyc](https://github.com/mrubyc/mrubyc){:target="_blank"}
 - [ruby/irb](https://github.com/ruby/irb){:target="_blank"}
 - [ruby/reline](https://github.com/ruby/reline){:target="_blank"}
-- [mrubyc/mrubyc](https://github.com/mrubyc/mrubyc){:target="_blank"}
 - [rabbit-shocker/rabbit](https://github.com/rabbit-shocker/rabbit){:target="_blank"}
 
 ## Publications
@@ -61,6 +64,8 @@ As of 2025:
 
 ## Presentations | Workshops
 
+- RubyKaigi 2025 / Matz-yama, Japan  
+  [[ja] MicroRuby: True Microcontroller Ruby](https://rubykaigi.org/2025/presentations/hasumikin.html){:target="_blank"}
 - EuRuKo 2024 / Sarajevo, Bosnia and Herzegovina  
   [[en] Embedded Ruby Revolution: A Hands-On Workshop with PicoRuby](https://slide.rabbit-shocker.org/authors/hasumikin/Euruko2024/){:target="_blank"}
 - Osaka RubyKaigi 04 / Osaka, Japan  
@@ -117,6 +122,8 @@ Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabb
 
 ## Grants
 
+- 2024 Ruby Association Grant  
+  [PicoRuby2: New PicoRuby Using mruby as VM](https://www.ruby.or.jp/en/news/20250428){:target="_blank"}
 - 2021 Ruby Association Grant  
   [picoruby-compiler: An alternative mruby-compiler](https://www.ruby.or.jp/en/news/20211025){:target="_blank"}
 - 2020 Ruby Association Grant  
