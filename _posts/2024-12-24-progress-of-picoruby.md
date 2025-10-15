@@ -66,7 +66,7 @@ PicoRuby.wasmをつくりました。
 
 RBSファイルのシグネチャ情報を収集して自動生成されるAPIドキュメントを開発。
 
-成果物：[https://picoruby.github.io/](https://picoruby.github.io/)
+成果物：[https://picoruby.org/](https://picoruby.org/)
 
 ----
 
