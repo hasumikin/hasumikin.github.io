@@ -62,7 +62,7 @@ As of 2026:
 
 ## Publications
 
-### [n月刊ラムダノート Vol.4, No.1(2024)
+### n月刊ラムダノート Vol.4, No.1(2024)
 - [(ja) PicoRubyといっしょに学ぶ、プログラミング言語が電気回路を動かす仕組み](https://www.lambdanote.com/collections/frontpage/products/nmonthly-vol-4-no-1-2024)
 
 ## Presentations | Workshops
