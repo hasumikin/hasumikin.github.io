@@ -110,7 +110,7 @@ As of 2026:
 
 Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabbit-shocker.org/authors/hasumikin/)
 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/WiJC_v5Lus8?si=o7j6EaSl3Occnu-2" frameborder="0" allowfullscreen> </iframe>
+<iframe src="https://www.youtube.com/embed/WiJC_v5Lus8?si=o7j6EaSl3Occnu-2" frameborder="0" allowfullscreen> </iframe>
 
 ## Honors & Awards
 

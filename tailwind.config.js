@@ -3,7 +3,8 @@ module.exports = {
   content: [
     "./dist/**/*.html",
     "./articles/**/*.md",
-    "./misc/**/*.md"
+    "./misc/**/*.md",
+    "./templates/**/*.html.erb"
   ],
   theme: {
     extend: {},
