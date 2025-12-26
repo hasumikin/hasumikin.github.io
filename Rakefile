@@ -171,7 +171,6 @@ namespace :buddie do
             front_matter[key] = value
           end
         end
-        content = content.sub(/\A---\s*\n(?<fm>.*?)\n^---\s*$\n?/m, '')
       end
 
       title = front_matter['title'] || page_name.gsub('_', ' ').capitalize
@@ -180,15 +179,6 @@ namespace :buddie do
       page_html = template.result(binding)
       site_title = config['site_title'] || 'PicoRuby Buddie Blog'
       page_html.sub!(/<title>.*?<\/title>/, "<title>#{title} - #{site_title}</title>")
-
-      # Replace the Ruby script to render the specific page
-      page_html.sub!(/<script type="text\/ruby">.*?<\/script>/m, <<~RUBY)
-        <script type="text/ruby">
-          require 'buddie'
-          buddie = Buddie.new
-          buddie.render_static_page('misc/#{File.basename(md_file_path)}')
-        </script>
-      RUBY
 
       # Write the page HTML
       File.write(File.join(page_dir, 'index.html'), page_html)

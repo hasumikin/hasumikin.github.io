@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/prism.css">
     <script>
-      (function() {
-        const theme = localStorage.getItem('theme') ||
-          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-      })();
     </script>
   </head>
   <body class="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 min-h-screen transition-colors">
@@ -59,32 +54,9 @@
         <p class="text-xs text-slate-500 dark:text-slate-400">Built with Buddie "Hybrid" Site Generator</p>
       </footer>
     </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-          themeToggle.addEventListener('click', function() {
-            const html = document.documentElement;
-            const isDark = html.classList.contains('dark');
-            html.classList.toggle('dark', !isDark);
-            localStorage.setItem('theme', isDark ? 'light' : 'dark');
-          });
-        }
-
-        // Open external links in new tab
-        var links = document.querySelectorAll("a[href^='http']:not([href*='" + window.location.hostname + "'])");
-        links.forEach(function(link) {
-          link.setAttribute('target', '_blank');
-          link.setAttribute('rel', 'noopener noreferrer');
-        });
-      });
-    </script>
+    <script src="/assets/buddie.js"></script>
     <script src="/assets/prism-bundle.js"></script>
-    <script src="/init.iife.js"></script>
-    <script type="text/ruby">
-      require 'buddie'
-      Buddie.run
-    </script>
+    <script type="application/x-mrb" src="/assets/buddie.mrb"></script>
+    <script src="/assets/init.iife.js"></script>
   </body>
 </html>

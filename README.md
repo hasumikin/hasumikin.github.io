@@ -19,24 +19,28 @@ It uses Rake (CRuby) to statically build miscellaneous pages like `about` and ar
 .
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml           # GitHub Actions workflow for deployment
-├── dist/                        # Site output directory
-│   ├── index.html               # Main HTML file
-│   ├── 404.html                 # 404 redirect page
-│   ├── assets/                  # Static assets
-│   │   ├── tailwind-config.js   # Tailwind CSS configuration
-│   │   └── styles.css           # Custom styles (customize here!)
-│   ├── articles/                # Your markdown articles (write here!), dynamically built in browser
-│   │   ├── my_first_post.md
-│   │   └── about_picoruby.md
-│   ├── misc/                    # Misc pages (About, Contact, etc.), dynamically built in browser
-│   │   └── about.md             # Example: /about page
-│   ├── generated/               # Statically generated index files
-│   │   ├── index_1.json         # Article index for page 1
-│   │   └── index_2.json         # Article index for page 2
-│   └── about/                   # Generated static page
-│       └── index.html           # /about page HTML
-├── Rakefile                     # Build tasks
+│       └── deploy.yml      # GitHub Actions for deployment
+├── dist/                   # Source files and generated site output
+│   ├── index.html          # Main HTML file (generated)
+│   ├── 404.html            # 404 page (generated)
+│   ├── articles/           # Your markdown articles (write source files here)
+│   │   ├── ...
+│   ├── misc/               # Misc pages (write source files here)
+│   │   └── about.md
+│   ├── assets/             # Static assets
+│   │   ├── input.css       # Custom CSS source
+│   │   └── styles.css      # Generated CSS
+│   │   └── ...
+│   └── generated/          # Statically generated index files
+│       └── index_1.json
+├── templates/              # ERB templates for page generation
+│   ├── 404.html
+│   └── index.html.erb
+├── config.yaml             # Buddie configuration
+├── Gemfile                 # Ruby dependencies
+├── package.json            # Node.js dependencies
+├── Rakefile                # Build tasks
+├── tailwind.config.js      # Tailwind CSS configuration
 └── README.md
 ```
 
@@ -44,7 +48,7 @@ It uses Rake (CRuby) to statically build miscellaneous pages like `about` and ar
 
 You can customize the blog design by editing:
 
-- **`tailwind.config.js`**: Tailwind CSS configuration (colors, fonts, breakpoints, etc.)
+- **`tailwind.config.js`** (in the project root): Tailwind CSS configuration (colors, fonts, etc.)
 - **`dist/assets/input.css`**: Custom CSS styles for articles, cards, and layout
 
 After making changes, rebuild the CSS:
@@ -201,7 +205,7 @@ rake buddie:server
 
 ## Requirements
 
-- Ruby 3.x
+- Ruby 3.4 or later
 - Node.js 18.x or later
 - Rake
 - JSON gem
@@ -217,3 +221,5 @@ For GitHub Actions deployment, dependencies are installed automatically.
 ## License
 
 MIT
+
+Copyright (c) 2025 HASUMI Hitoshi (@hasumikin)
