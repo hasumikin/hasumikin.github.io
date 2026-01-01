@@ -2,14 +2,17 @@
 node_modules/
 package-lock.json
 
-# Build artifacts
-dist/generated/*.json
-dist/*/index.html
-!dist/index.html
-!dist/404.html
+# Build artifacts - generated HTML pages
+dist/[0-9][0-9][0-9][0-9]/
+dist/page[0-9]*/
+dist/about/
 dist/assets/styles.css
 dist/assets/prism-bundle.js
 dist/assets/prism.css
+
+# Keep static files
+!dist/index.html
+!dist/404.html
 
 # macOS
 .DS_Store

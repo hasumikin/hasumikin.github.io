@@ -37,6 +37,8 @@ jobs:
         run: |
           gem install rake
           gem install json
+          gem install kramdown
+          gem install kramdown-parser-gfm
           npm install
 
       - name: Build site

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= config['site_title'] %></title>
-    <meta name="description" content="<%= config['site_description'] %>">
+    <title><%= page_title %> - <%= config['site_title'] %></title>
+    <meta name="description" content="<%= page_title %>">
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/prism.css">
   </head>
@@ -39,40 +39,11 @@
         </nav>
       </header>
 
-      <main id="content" class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-4 sm:p-8 mb-12 min-h-[400px] transition-colors">
-        <div class="article-list">
-          <div class="article-list-items">
-            <% articles.each do |article| %>
-            <div class="article-card">
-              <h3 class="article-card-title">
-                <a href="<%= article[:url] %>" class="article-card-link"><%= article[:title] %></a>
-              </h3>
-              <p class="article-card-date"><%= article[:date] %></p>
-            </div>
-            <% end %>
-          </div>
-        </div>
-
-        <% if total_pages > 1 %>
-        <div class="pagination">
-          <p class="pagination-info">Page <%= current_page %> of <%= total_pages %></p>
-          <div class="pagination-links">
-            <% if current_page > 1 %>
-            <a href="<%= current_page == 2 ? '/' : "/page#{current_page - 1}/" %>" class="pagination-link">&larr; Prev</a>
-            <% else %>
-            <span class="pagination-link pagination-disabled">&larr; Prev</span>
-            <% end %>
-
-            <span class="pagination-link pagination-current"><%= current_page %></span>
-
-            <% if current_page < total_pages %>
-            <a href="/page<%= current_page + 1 %>/" class="pagination-link">Next &rarr;</a>
-            <% else %>
-            <span class="pagination-link pagination-disabled">Next &rarr;</span>
-            <% end %>
-          </div>
-        </div>
-        <% end %>
+      <main id="content" class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-4 sm:p-8 mb-12 transition-colors">
+        <article class="article-content prose dark:prose-invert max-w-none text-justify">
+          <h1 class="text-3xl font-bold text-slate-900 dark:text-white mb-6"><%= page_title %></h1>
+          <%= page_content %>
+        </article>
       </main>
 
       <footer class="text-center text-slate-600 dark:text-slate-300 text-sm py-8 border-t border-slate-200 dark:border-slate-700 transition-colors">
@@ -81,5 +52,6 @@
       </footer>
     </div>
     <script src="/assets/buddie.js"></script>
+    <script src="/assets/prism-bundle.js"></script>
   </body>
 </html>
