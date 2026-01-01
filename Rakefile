@@ -86,202 +86,203 @@ def load_all_articles(articles_dir)
   articles.sort_by { |a| a[:date] }.reverse
 end
 
-namespace :buddie do
-  desc "Run server"
-  task :server => :build do
-    puts "Starting server..."
-    FileUtils.cd(File.expand_path('dist', __dir__)) do
-      system("ruby -r un -e httpd . -p 8000")
-    end
+desc "Default task: build and run server"
+task :default => 'server'
+
+desc "Run server"
+task :server => :build do
+  puts "Starting server..."
+  FileUtils.cd(File.expand_path('dist', __dir__)) do
+    system("ruby -r un -e httpd . -p 8000")
+  end
+end
+
+desc "Generate article HTML pages"
+task :generate_articles do
+  config = load_config
+  articles_dir = File.expand_path('articles', __dir__)
+  dist_dir = File.expand_path('dist', __dir__)
+  template_file = File.expand_path('templates/article.html.erb', __dir__)
+
+  unless File.exist?(template_file)
+    puts "Warning: Template file #{template_file} not found."
+    next
   end
 
-  desc "Generate article HTML pages"
-  task :generate_articles do
-    config = load_config
-    articles_dir = File.expand_path('articles', __dir__)
-    dist_dir = File.expand_path('dist', __dir__)
-    template_file = File.expand_path('templates/article.html.erb', __dir__)
+  template = ERB.new(File.read(template_file))
 
-    unless File.exist?(template_file)
-      puts "Warning: Template file #{template_file} not found."
-      next
-    end
+  Dir.glob(File.join(articles_dir, "*.md")).each do |md_file_path|
+    content = File.read(md_file_path)
+    front_matter, markdown_content = parse_front_matter(content)
 
-    template = ERB.new(File.read(template_file))
+    article_title = front_matter['title'] || 'Untitled'
+    article_date = front_matter['date'] || Time.now.strftime('%Y-%m-%d')
+    article_content = markdown_to_html(markdown_content)
 
-    Dir.glob(File.join(articles_dir, "*.md")).each do |md_file_path|
-      content = File.read(md_file_path)
-      front_matter, markdown_content = parse_front_matter(content)
+    output_path = article_output_path(md_file_path, dist_dir)
+    FileUtils.mkdir_p(File.dirname(output_path))
 
-      article_title = front_matter['title'] || 'Untitled'
-      article_date = front_matter['date'] || Time.now.strftime('%Y-%m-%d')
-      article_content = markdown_to_html(markdown_content)
+    html = template.result(binding)
+    File.write(output_path, html)
+    puts "Generated #{output_path}"
+  end
+end
 
-      output_path = article_output_path(md_file_path, dist_dir)
-      FileUtils.mkdir_p(File.dirname(output_path))
+desc "Generate index pages with pagination"
+task :generate_index_pages do
+  config = load_config
+  per_page = config['per_page'] || 20
+  articles_dir = File.expand_path('articles', __dir__)
+  dist_dir = File.expand_path('dist', __dir__)
+  template_file = File.expand_path('templates/index.html.erb', __dir__)
 
-      html = template.result(binding)
-      File.write(output_path, html)
-      puts "Generated #{output_path}"
-    end
+  unless File.exist?(template_file)
+    puts "Warning: Template file #{template_file} not found."
+    next
   end
 
-  desc "Generate index pages with pagination"
-  task :generate_index_pages do
-    config = load_config
-    per_page = config['per_page'] || 20
-    articles_dir = File.expand_path('articles', __dir__)
-    dist_dir = File.expand_path('dist', __dir__)
-    template_file = File.expand_path('templates/index.html.erb', __dir__)
+  template = ERB.new(File.read(template_file))
 
-    unless File.exist?(template_file)
-      puts "Warning: Template file #{template_file} not found."
-      next
+  all_articles = load_all_articles(articles_dir)
+  total_articles = all_articles.length
+  total_pages = (total_articles.to_f / per_page).ceil
+  total_pages = 1 if total_pages == 0
+
+  puts "Generating #{total_pages} index page(s) (#{total_articles} total articles)"
+
+  (1..total_pages).each do |page_num|
+    start_idx = (page_num - 1) * per_page
+    end_idx = [start_idx + per_page - 1, total_articles - 1].min
+    articles = all_articles[start_idx..end_idx] || []
+
+    current_page = page_num
+
+    if page_num == 1
+      output_path = File.join(dist_dir, 'index.html')
+    else
+      output_dir = File.join(dist_dir, "page#{page_num}")
+      FileUtils.mkdir_p(output_dir)
+      output_path = File.join(output_dir, 'index.html')
     end
 
-    template = ERB.new(File.read(template_file))
+    html = template.result(binding)
+    File.write(output_path, html)
+    puts "Generated #{output_path} (#{articles.length} articles)"
+  end
+end
 
-    all_articles = load_all_articles(articles_dir)
-    total_articles = all_articles.length
-    total_pages = (total_articles.to_f / per_page).ceil
-    total_pages = 1 if total_pages == 0
+desc "Generate 404.html from template"
+task :generate_404 do
+  template_file = File.expand_path('templates/404.html', __dir__)
+  output_file = File.expand_path('dist/404.html', __dir__)
 
-    puts "Generating #{total_pages} index page(s) (#{total_articles} total articles)"
-
-    (1..total_pages).each do |page_num|
-      start_idx = (page_num - 1) * per_page
-      end_idx = [start_idx + per_page - 1, total_articles - 1].min
-      articles = all_articles[start_idx..end_idx] || []
-
-      current_page = page_num
-
-      if page_num == 1
-        output_path = File.join(dist_dir, 'index.html')
-      else
-        output_dir = File.join(dist_dir, "page#{page_num}")
-        FileUtils.mkdir_p(output_dir)
-        output_path = File.join(output_dir, 'index.html')
-      end
-
-      html = template.result(binding)
-      File.write(output_path, html)
-      puts "Generated #{output_path} (#{articles.length} articles)"
-    end
+  unless File.exist?(template_file)
+    puts "Warning: Template file #{template_file} not found."
+    next
   end
 
-  desc "Generate 404.html from template"
-  task :generate_404 do
-    template_file = File.expand_path('templates/404.html', __dir__)
-    output_file = File.expand_path('dist/404.html', __dir__)
+  FileUtils.cp(template_file, output_file)
+  puts "Generated #{output_file}"
+end
 
-    unless File.exist?(template_file)
-      puts "Warning: Template file #{template_file} not found."
-      next
-    end
+desc "Generate static pages from misc directory"
+task :generate_pages do
+  config = load_config
+  dist_dir = File.expand_path('dist', __dir__)
+  misc_dir = File.expand_path('misc', __dir__)
+  template_file = File.expand_path('templates/page.html.erb', __dir__)
 
-    FileUtils.cp(template_file, output_file)
-    puts "Generated #{output_file}"
+  unless File.exist?(template_file)
+    puts "Warning: Template file #{template_file} not found. Skipping page generation."
+    next
   end
 
-  desc "Generate static pages from misc directory"
-  task :generate_pages do
-    config = load_config
-    dist_dir = File.expand_path('dist', __dir__)
-    misc_dir = File.expand_path('misc', __dir__)
-    template_file = File.expand_path('templates/page.html.erb', __dir__)
-
-    unless File.exist?(template_file)
-      puts "Warning: Template file #{template_file} not found. Skipping page generation."
-      next
-    end
-
-    unless File.directory?(misc_dir)
-      puts "Warning: misc directory not found. Skipping page generation."
-      next
-    end
-
-    template = ERB.new(File.read(template_file))
-
-    Dir.glob(File.join(misc_dir, "*.md")).each do |md_file_path|
-      content = File.read(md_file_path)
-      front_matter, markdown_content = parse_front_matter(content)
-
-      page_name = File.basename(md_file_path, ".md")
-      page_title = front_matter['title'] || page_name.gsub('_', ' ').capitalize
-      page_content = markdown_to_html(markdown_content)
-
-      page_dir = File.join(dist_dir, page_name)
-      FileUtils.mkdir_p(page_dir)
-
-      html = template.result(binding)
-      File.write(File.join(page_dir, 'index.html'), html)
-      puts "Generated #{page_dir}/index.html"
-    end
+  unless File.directory?(misc_dir)
+    puts "Warning: misc directory not found. Skipping page generation."
+    next
   end
 
-  desc "Build Prism.js bundle"
-  task :build_prism do
-    puts "Building Prism.js bundle..."
-    system("npm run build:prism")
+  template = ERB.new(File.read(template_file))
+
+  Dir.glob(File.join(misc_dir, "*.md")).each do |md_file_path|
+    content = File.read(md_file_path)
+    front_matter, markdown_content = parse_front_matter(content)
+
+    page_name = File.basename(md_file_path, ".md")
+    page_title = front_matter['title'] || page_name.gsub('_', ' ').capitalize
+    page_content = markdown_to_html(markdown_content)
+
+    page_dir = File.join(dist_dir, page_name)
+    FileUtils.mkdir_p(page_dir)
+
+    html = template.result(binding)
+    File.write(File.join(page_dir, 'index.html'), html)
+    puts "Generated #{page_dir}/index.html"
+  end
+end
+
+desc "Build Prism.js bundle"
+task :build_prism do
+  puts "Building Prism.js bundle..."
+  system("npm run build:prism")
+end
+
+desc "Build CSS with Tailwind"
+task :build_css do
+  puts "Building CSS with Tailwind..."
+  system("npm run build:css")
+end
+
+desc "Clean generated files"
+task :clean do
+  dist_dir = File.expand_path('dist', __dir__)
+
+  # Remove generated article directories (yyyy/mm/dd/slug)
+  Dir.glob(File.join(dist_dir, '[0-9][0-9][0-9][0-9]')).each do |year_dir|
+    FileUtils.rm_rf(year_dir)
+    puts "Removed #{year_dir}"
   end
 
-  desc "Build CSS with Tailwind"
-  task :build_css do
-    puts "Building CSS with Tailwind..."
-    system("npm run build:css")
+  # Remove page directories
+  Dir.glob(File.join(dist_dir, 'page[0-9]*')).each do |page_dir|
+    FileUtils.rm_rf(page_dir)
+    puts "Removed #{page_dir}"
   end
 
-  desc "Clean generated files"
-  task :clean do
-    dist_dir = File.expand_path('dist', __dir__)
-
-    # Remove generated article directories (yyyy/mm/dd/slug)
-    Dir.glob(File.join(dist_dir, '[0-9][0-9][0-9][0-9]')).each do |year_dir|
-      FileUtils.rm_rf(year_dir)
-      puts "Removed #{year_dir}"
-    end
-
-    # Remove page directories
-    Dir.glob(File.join(dist_dir, 'page[0-9]*')).each do |page_dir|
-      FileUtils.rm_rf(page_dir)
-      puts "Removed #{page_dir}"
-    end
-
-    # Remove generated directory
-    generated_dir = File.join(dist_dir, 'generated')
-    if File.directory?(generated_dir)
-      FileUtils.rm_rf(generated_dir)
-      puts "Removed #{generated_dir}"
-    end
-
-    puts "Clean complete!"
+  # Remove generated directory
+  generated_dir = File.join(dist_dir, 'generated')
+  if File.directory?(generated_dir)
+    FileUtils.rm_rf(generated_dir)
+    puts "Removed #{generated_dir}"
   end
 
-  desc "Build site for deployment"
-  task :build do
-    dist_dir = File.expand_path('dist', __dir__)
-    FileUtils.mkdir_p(dist_dir)
+  puts "Clean complete!"
+end
 
-    puts "Building static blog..."
+desc "Build site for deployment"
+task :build do
+  dist_dir = File.expand_path('dist', __dir__)
+  FileUtils.mkdir_p(dist_dir)
 
-    # Build Prism.js bundle
-    Rake::Task['buddie:build_prism'].invoke
+  puts "Building static blog..."
 
-    # Build CSS
-    Rake::Task['buddie:build_css'].invoke
+  # Build Prism.js bundle
+  Rake::Task['build_prism'].invoke
 
-    # Generate 404.html from template
-    Rake::Task['buddie:generate_404'].invoke
+  # Build CSS
+  Rake::Task['build_css'].invoke
 
-    # Generate article HTML pages
-    Rake::Task['buddie:generate_articles'].invoke
+  # Generate 404.html from template
+  Rake::Task['generate_404'].invoke
 
-    # Generate index pages with pagination
-    Rake::Task['buddie:generate_index_pages'].invoke
+  # Generate article HTML pages
+  Rake::Task['generate_articles'].invoke
 
-    # Generate static pages from misc
-    Rake::Task['buddie:generate_pages'].invoke
+  # Generate index pages with pagination
+  Rake::Task['generate_index_pages'].invoke
 
-    puts "Build complete! Output in #{dist_dir}"
-  end
+  # Generate static pages from misc
+  Rake::Task['generate_pages'].invoke
+
+  puts "Build complete! Output in #{dist_dir}"
 end

@@ -42,7 +42,7 @@ jobs:
           npm install
 
       - name: Build site
-        run: rake buddie:build
+        run: rake build
 
       - name: Copy CNAME
         run: cp CNAME dist/
