@@ -69,42 +69,61 @@ As of 2026:
 
 ### RubyWorld Conference 2025 / Matsue, Japan
 - [(ja) Why Now Is the Right Time for PicoRuby](https://slide.rabbit-shocker.org/authors/hasumikin/RubyWorldConference2025/)
+
 ### EuRuKo 2025 / Viana do Castelo, Portugal
 - [(en) PicoRuby Hands-on: Internet of Things Edition](https://slide.rabbit-shocker.org/authors/hasumikin/Euruko2025/)
+
 ### RubyConf Taiwan 2025 / Taipei, Taiwan
 - [(en) Well, PicoRuby Can Do That](https://coscup.org/2025/en/sessions/AFH9W3)
+
 ### RubyKaigi 2025 / Matz-yama, Japan
 - [(ja) MicroRuby: True Microcontroller Ruby](https://rubykaigi.org/2025/presentations/hasumikin.html)
+
 ### EuRuKo 2024 / Sarajevo, Bosnia and Herzegovina
 - [(en) Embedded Ruby Revolution: A Hands-On Workshop with PicoRuby](https://slide.rabbit-shocker.org/authors/hasumikin/Euruko2024/)
+
 ### Osaka RubyKaigi 04 / Osaka, Japan
 - [(ja) Where Is PicoRuby Going](https://regional.rubykaigi.org/osaka04/presentations/hasumikin)
+
 ### RubyConf Arfica 2024 / Nairobi, Kenya
 - [(en) A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://slide.rabbit-shocker.org/authors/hasumikin/RubyConfAfrica2024/)
+
 ### RubyKaigi 2024 / Okinawa, Japan
 - [(ja) Unlock The Universal Parsers: A New PicoRuby Compiler](https://rubykaigi.org/2024/presentations/hasumikin.html#day2)
+
 ### RubyConfTH 2023 / Bangkok, Thailand
 - [(en) A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://www.youtube.com/watch?v=GkIRr1Xm8GU)
+
 ### EuRuKo 2023 / Vilnius, Lituhania
 - [(en) A Beginner's Complete Guide to Microcontroller Programming with Ruby](https://youtu.be/WiJC_v5Lus8)
+
 ### RubyKaigi 2023 / Matsumoto, Japan
 - [(ja) Build Your Own SQLite3](https://rubykaigi.org/2023/presentations/hasumikin.html#day3)
+
 ### RubyWorld Conference 2022 / Matsue, Japan
 - [(en) PicoRuby episode Ⅲ](https://youtu.be/RKTlujhY6J8)
 - [(ja) PicoRuby episode Ⅲ](https://youtu.be/6Fs-zZuCuv0)
+
 ### RubyConf 2021 / Denver, the US and online
 - [(en) On a Keyboard Ruby on Board: PicoRuby and PRK Firmware](https://youtu.be/SLSwn41iJX4)
+
 ### RubyKaigi Takeout 2021 / Online
 - [(ja) PRK Firmware: Keyboard is Essentially Ruby](https://rubykaigi.org/2021-takeout/presentations/hasumikin.html)
+
 ### RubyKaigi Takeout 2020 / Online
 - [(ja) mruby machine: An Operating System for Microcontoller](https://rubykaigi.org/2020-takeout/presentations/hasumikin.html#sep04)
+
 ### RubyConf 2019 / Nashville, the US
 - [(en) mruby/c: Running on Less Than 64KB RAM Microcontroller](https://youtu.be/1VFPSHs3WvI)
+
 ### KRKRB 2019 / Cracow, Poland
+
 ### RubyKaigi 2019 / Fukuoka, Japan
 - [(en) Practical mruby/c firmware development with CRuby](https://rubykaigi.org/2019/presentations/hasumikin.html#apr19)
+
 ### RubyWorld Conference 2018 / Matsue, Japan
 - [(ja) Making IoT device with Ruby](https://www.youtube.com/watch?v=3ICCdASI8tg)
+
 ### RubyKaigi 2018 / Sendai, Japan
 - [(ja) Firmware programming with mruby/c](https://rubykaigi.org/2018/presentations/hasumon.html)
 
@@ -116,8 +135,10 @@ Slides: [https://slide.rabbit-shocker.org/authors/hasumikin/](https://slide.rabb
 
 ### The first prize winner of the Fukuoka Ruby Award 2022
 - [http://www.digitalfukuoka.jp/topics/187](http://www.digitalfukuoka.jp/topics/187)
+
 ### A final nominee for the Ruby Prize 2021
 - [https://rubyprize.jp/21_rubyprize/21_iv-nominees02-ja.html](https://rubyprize.jp/21_rubyprize/21_iv-nominees02-ja.html)
+
 ### The first prize winner of the Fukuoka Ruby Award 2020
 - [http://www.digitalfukuoka.jp/topics/144](http://www.digitalfukuoka.jp/topics/144)
 
