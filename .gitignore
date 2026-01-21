@@ -9,9 +9,9 @@ dist/about/
 dist/assets/styles.css
 dist/assets/prism-bundle.js
 dist/assets/prism.css
+dist/index.html
 
 # Keep static files
-!dist/index.html
 !dist/404.html
 
 # macOS
