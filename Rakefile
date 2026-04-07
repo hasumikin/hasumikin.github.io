@@ -91,10 +91,26 @@ task :default => 'server'
 
 desc "Run server"
 task :server => :build do
-  puts "Starting server..."
+  require 'listen'
+
+  articles_dir = File.expand_path('articles', __dir__)
+  listener = Listen.to(articles_dir, only: /\.md$/) do |modified, added, removed|
+    changed = (modified + added + removed).map { |f| File.basename(f) }.join(', ')
+    puts "\nChanged: #{changed} -- regenerating..."
+    Rake::Task['generate_articles'].reenable
+    Rake::Task['generate_articles'].invoke
+    Rake::Task['generate_index_pages'].reenable
+    Rake::Task['generate_index_pages'].invoke
+    puts "Done."
+  end
+  listener.start
+  puts "Watching articles/ for changes..."
+
   FileUtils.cd(File.expand_path('dist', __dir__)) do
     system("ruby -r un -e httpd . -p 8000")
   end
+
+  listener.stop
 end
 
 desc "Generate article HTML pages"
