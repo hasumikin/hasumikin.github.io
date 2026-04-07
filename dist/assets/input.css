@@ -297,6 +297,18 @@
   border-color: rgb(71, 85, 105);
 }
 
+/* Footnotes */
+.article-content .footnotes ol {
+  display: block;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+.article-content .footnotes ol li {
+  display: list-item;
+  margin-left: 0;
+}
+
 .article-footer {
   margin-top: 2rem;
   padding-top: 1.5rem;
