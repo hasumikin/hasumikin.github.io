@@ -237,6 +237,27 @@ task :generate_pages do
   end
 end
 
+desc "Copy static assets (non-Markdown files) from misc directory to dist root"
+task :copy_misc_assets do
+  dist_dir = File.expand_path('dist', __dir__)
+  misc_dir = File.expand_path('misc', __dir__)
+
+  unless File.directory?(misc_dir)
+    puts "Warning: misc directory not found. Skipping asset copy."
+    next
+  end
+
+  FileUtils.mkdir_p(dist_dir)
+
+  Dir.glob(File.join(misc_dir, "*")).each do |file_path|
+    next unless File.file?(file_path)
+    next if File.extname(file_path) == '.md'
+
+    FileUtils.cp(file_path, dist_dir)
+    puts "Copied #{file_path} -> #{dist_dir}/"
+  end
+end
+
 desc "Build Prism.js bundle"
 task :build_prism do
   puts "Building Prism.js bundle..."
@@ -299,6 +320,9 @@ task :build do
 
   # Generate static pages from misc
   Rake::Task['generate_pages'].invoke
+
+  # Copy static assets from misc
+  Rake::Task['copy_misc_assets'].invoke
 
   puts "Build complete! Output in #{dist_dir}"
 end
