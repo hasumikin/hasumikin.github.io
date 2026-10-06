@@ -212,6 +212,7 @@
   color: rgb(147, 51, 234);
   background-color: rgb(250, 245, 255);
   padding: 0.125rem 0.25rem;
+  margin: 0 0.25em;
   border-radius: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -240,6 +241,7 @@
   background-color: transparent;
   color: rgb(248, 250, 252);
   padding: 0;
+  margin: 0;
 }
 
 .article-content ul {
