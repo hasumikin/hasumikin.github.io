@@ -231,6 +231,8 @@
   border-radius: 0.5rem;
   overflow-x: auto;
   margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
 }
 
 .dark .article-content pre {
@@ -243,6 +245,8 @@
   color: rgb(248, 250, 252);
   padding: 0;
   margin: 0;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .article-content ul {
