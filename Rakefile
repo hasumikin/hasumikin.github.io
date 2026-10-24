@@ -41,6 +41,14 @@ def parse_front_matter(content)
   [front_matter, content_without_fm]
 end
 
+# Use the "lang" front matter if given; otherwise "ja" if the title or the
+# text has kana or kanji. A wrong lang lets the browser pick a Chinese font
+# for CJK punctuation.
+def detect_lang(front_matter, markdown)
+  text = "#{front_matter['title']}#{markdown}"
+  front_matter['lang'] || (text.match?(/[\p{Hiragana}\p{Katakana}\p{Han}]/) ? 'ja' : 'en')
+end
+
 def markdown_to_html(markdown)
   Kramdown::Document.new(markdown, input: 'GFM', syntax_highlighter: nil).to_html
 end
@@ -133,6 +141,7 @@ task :generate_articles do
 
     article_title = front_matter['title'] || 'Untitled'
     article_date = front_matter['date'] || Time.now.strftime('%Y-%m-%d')
+    article_lang = detect_lang(front_matter, markdown_content)
     article_content = markdown_to_html(markdown_content)
 
     output_path = article_output_path(md_file_path, dist_dir)
@@ -226,6 +235,7 @@ task :generate_pages do
 
     page_name = File.basename(md_file_path, ".md")
     page_title = front_matter['title'] || page_name.gsub('_', ' ').capitalize
+    page_lang = detect_lang(front_matter, markdown_content)
     page_content = markdown_to_html(markdown_content)
 
     page_dir = File.join(dist_dir, page_name)

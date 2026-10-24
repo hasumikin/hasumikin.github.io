@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @config "../../tailwind.config.js";
 
+/* Japanese fonts before the generic family, so that CJK punctuation
+   such as U+3001 does not fall back to a Chinese font */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic", Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 /* Gradient Text Utility */
 .gradient-text {
   background: linear-gradient(to right, rgb(147, 51, 234), rgb(219, 39, 119));
